@@ -6,7 +6,8 @@ class Header extends Component {
       <div>
         <Menu>
           <Menu.Item name='ecoUp PDX'/>
-          <Menu.Item name='About'/>'
+          <Menu.Item name='About'/>
+          <Menu.Item name='Putting it all together'/>
         </Menu>
       </div>
     )

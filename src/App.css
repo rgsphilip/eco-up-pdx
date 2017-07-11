@@ -16,6 +16,12 @@
 
 .App-intro {
   font-size: large;
+  margin-top: 2em;
+}
+
+.Bar-graph {
+  margin: 3em;
+  height: 500px;
 }
 
 @keyframes App-logo-spin {

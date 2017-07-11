@@ -4,6 +4,32 @@ This is a project to help Portlanders reduce their environmental impact. I've de
 
 This project is in its very initial phase! Additional work + documentation coming soon.
 
+## Week 3 Status:
+
+### Work completed:
+
+* Design and 'vision' of the site - the site will have a series of bar graphs showing the average emmission footprint of an American, with suggested habits that users can 'toggle' to see how much they can reduce their impact. 
+
+* Picked frameworks: React and Semantic UI.
+
+* Began playing around with site setup and am currently investigating how to achieve the bar graph main component. I have figured out how I want to interact with the bar graph component as a developer (which may become its own spinoff library), and now am figuring out how to make it happen.
+
+* Scoped the project: originally, I planned to have a back end where users could log in to keep a gamified journal of their successes in reducing their impact. This might still happen (perhaps written as a mobile app in React Native), but will not be part of the PSU OSS 2017 work. 
+
+### Work to do still:
+
+* Write bar graph component for React to achieve the desired user interaction (targeting completion in week 4).
+
+* Write 'panel' component for displaying information to users (targeting completion in week 5).
+
+* Lots of research about carbon emmissions and effective ways individuals can reduce their impact - will happen throughout, but I plan to focus on the technical components before diving into research; if worse comes to worse, I can mock up some 'lorem ipsum' if not all the components are ready for real content.
+
+* Write supporting functions and UI to allow users to see how changing their behaviors impacts their footprint (targeting bulk of work in week 6, completion in week 7).
+
+* Research activisim and organizations people can join to achieve larger structural environmental goals; unfortunately, we can't just take-the-bus-and-drive-less our way out of this situation. I also need to figure out how to weave this through the website. 
+
+* Stretch goal: release my bar graph component and related infrastructure as its own library.
+
 ## Built With
 
 * [create-react-app](https://github.com/facebookincubator/create-react-app) - A React project starter to get going fast with React.

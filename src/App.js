@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/header/Header';
-import logo from './logo.svg';
+import BarGraph from './components/bargraph/BarGraph';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +13,9 @@ class App extends Component {
         <p className="App-intro">
           ecoUp PDX is a resource to help Portlanders learn how to reduce our environmental footprint.
         </p>
+        <div className="Bar-graph">
+          <BarGraph/>
+        </div>
       </div>
     );
   }
