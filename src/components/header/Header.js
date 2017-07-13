@@ -4,11 +4,11 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Menu>
+         <Menu>
           <Menu.Item name='ecoUp PDX'/>
           <Menu.Item name='About'/>
           <Menu.Item name='Putting it all together'/>
-        </Menu>
+        </Menu> 
       </div>
     )
   }
