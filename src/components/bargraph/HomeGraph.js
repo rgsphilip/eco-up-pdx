@@ -2,36 +2,37 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import BarGraph from './BarGraph';
 import BarSegment from './BarSegment';
+import './BarGraph.css';
 
 class HomeGraph extends Component {
   constructor(props) {
     super(props);
-    this.onClick1 = this.onClick1.bind(this);
-    this.onClick2 = this.onClick2.bind(this);
-    this.onClick3 = this.onClick3.bind(this);
-    this.onClick4 = this.onClick4.bind(this);
+    this.goToTransit = this.goToTransit.bind(this);
+    this.goToFood = this.goToFood.bind(this);
+    this.goToAppliances = this.goToAppliances.bind(this);
+    this.goToOther = this.goToOther.bind(this);
   }
 
-  onClick1() {
+  goToTransit() {
     this.props.history.push('/about');
   }
-  onClick2() {
+  goToFood() {
     this.props.history.push('/about');
   }
-  onClick3() {
+  goToAppliances() {
     this.props.history.push('/about');
   }
-  onClick4() {
+  goToOther() {
     this.props.history.push('/about');
   }
 
   render() {
     return(
       <BarGraph height="60vh">
-        <BarSegment name="food" width="20%" color="blue" onClick={this.onClick2}/>
-        <BarSegment name="transportation" width="40%" color="red" onClick={this.onClick1}/>
-        <BarSegment name="home appliances" width="20%" color="green" onClick={this.onClick3}/>
-        <BarSegment name="other" width="20%" color="orange" onClick={this.onClick4}/>
+        <BarSegment name="food" width="20%" color="blue" onClick={this.goToFood}/>
+        <BarSegment name="transportation" width="40%" color="red" onClick={this.goToTransit}/>
+        <BarSegment name="home appliances" width="20%" color="green" onClick={this.goToAppliances}/>
+        <BarSegment name="other" width="20%" color="orange" onClick={this.goToOther}/>
       </BarGraph>
       
     );
