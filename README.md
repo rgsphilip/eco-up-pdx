@@ -18,7 +18,7 @@ This project is in its very initial phase! Additional work + documentation comin
 
 ### Work to do still:
 
-* Write bar graph component for React to achieve the desired user interaction (targeting completion in week 4).
+* Write bar graph component for React to achieve the desired user interaction (targeting completion in week 4). UPDATE: Partially complete (see BarGraph.js and BarSegment.js). Still to-do: CSS styling, image overlays, text.
 
 * Write 'panel' component for displaying information to users (targeting completion in week 5).
 
@@ -44,7 +44,7 @@ This project is in its very initial phase! Additional work + documentation comin
 
 ## License
 
-This project is licensed under the MIT License - see the [COPYING.md](COPYING.md) file for details
+This project is licensed under the MIT License - see the [COPYING](COPYING) file for details
 
 ## Acknowledgments
 
