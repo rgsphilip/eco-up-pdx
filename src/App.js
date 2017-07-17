@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/header/Header';
-import BarGraph from './components/bargraph/BarGraph';
+import HomeGraph from './components/bargraph/HomeGraph';
 import './App.css';
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
           Click on the segments below to learn more about where the average American's carbon emissions come from and how to reduce them. 
         </p>
         <div className="Bar-graph">
-          <BarGraph/>
+          <HomeGraph/>
         </div>
       </div>
     );
