@@ -28,10 +28,10 @@ class HomeGraph extends Component {
   render() {
     return(
       <BarGraph height="60vh">
-        <BarSegment width="20%" color="blue" onClick={this.onClick2}/>
-        <BarSegment width="40%" color="red" onClick={this.onClick1}/>
-        <BarSegment width="20%" color="green" onClick={this.onClick3}/>
-        <BarSegment width="20%" color="orange" onClick={this.onClick4}/>
+        <BarSegment name="food" width="20%" color="blue" onClick={this.onClick2}/>
+        <BarSegment name="transportation" width="40%" color="red" onClick={this.onClick1}/>
+        <BarSegment name="home appliances" width="20%" color="green" onClick={this.onClick3}/>
+        <BarSegment name="other" width="20%" color="orange" onClick={this.onClick4}/>
       </BarGraph>
       
     );
