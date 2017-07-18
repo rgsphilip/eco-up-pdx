@@ -4,7 +4,9 @@ This is a project to help Portlanders reduce their environmental impact. I've de
 
 This project is in its very initial phase! Additional work + documentation coming soon.
 
-## Week 3 Status:
+This project is written in Javascript using the React framework. 
+
+## Week 4 Status:
 
 ### Work completed:
 
@@ -16,9 +18,11 @@ This project is in its very initial phase! Additional work + documentation comin
 
 * Scoped the project: originally, I planned to have a back end where users could log in to keep a gamified journal of their successes in reducing their impact. This might still happen (perhaps written as a mobile app in React Native), but will not be part of the PSU OSS 2017 work. 
 
+* Wrote initial bar graph component for React with a little CSS that is easy to reuse (see BarGraph.js and BarSegment.js).
+
 ### Work to do still:
 
-* Write bar graph component for React to achieve the desired user interaction (targeting completion in week 4). UPDATE: Partially complete (see BarGraph.js and BarSegment.js). Still to-do: CSS styling, image overlays, text.
+* Write more CSS styling, image overlay, and some fancy animations for the bar graph component (targeting completion in week 4). 
 
 * Write 'panel' component for displaying information to users (targeting completion in week 5).
 
@@ -29,6 +33,37 @@ This project is in its very initial phase! Additional work + documentation comin
 * Research activisim and organizations people can join to achieve larger structural environmental goals; unfortunately, we can't just take-the-bus-and-drive-less our way out of this situation. I also need to figure out how to weave this through the website. 
 
 * Stretch goal: release my bar graph component and related infrastructure as its own library.
+
+<!-- ## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you have to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+ -->
 
 ## Built With
 
