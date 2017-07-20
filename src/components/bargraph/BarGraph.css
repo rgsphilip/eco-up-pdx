@@ -9,7 +9,8 @@
   transition: all .2s ease-in-out; 
   cursor: pointer;
   display: flex;
-  background-image: url(./../../img/IMG_5599.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .segment:hover {

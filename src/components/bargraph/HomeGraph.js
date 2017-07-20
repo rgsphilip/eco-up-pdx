@@ -3,7 +3,10 @@ import { withRouter } from 'react-router-dom';
 import BarGraph from './BarGraph';
 import BarSegment from './BarSegment';
 import './BarGraph.css';
-
+import foodImage from './../../img/IMG_5599.JPG';
+import transitImage from './../../img/IMG_5593.JPG';
+import applianceImage from './../../img/IMG_5605.JPG';
+import otherImage from './../../img/IMG_5565.JPG';
 class HomeGraph extends Component {
   constructor(props) {
     super(props);
@@ -39,10 +42,10 @@ class HomeGraph extends Component {
         </BarGraph> 
 
         <BarGraph height="60vh">
-          <BarSegment name="food" width="20%" color="blue" onClick={this.goToFood}/>
-          <BarSegment name="transportation" width="40%" onClick={this.goToTransit}/>
-          <BarSegment name="home appliances" width="20%" color="green" onClick={this.goToAppliances}/>
-          <BarSegment name="other" width="20%" color="orange" onClick={this.goToOther}/>
+          <BarSegment name="food" width="20%" color="blue" onClick={this.goToFood} image={foodImage}/>
+          <BarSegment name="transportation" width="40%" onClick={this.goToTransit} image={transitImage}/>
+          <BarSegment name="home appliances" width="20%" color="green" onClick={this.goToAppliances} image={applianceImage}/>
+          <BarSegment name="other" width="20%" color="orange" onClick={this.goToOther} image={otherImage}/>
         </BarGraph>
       </div>
     );
