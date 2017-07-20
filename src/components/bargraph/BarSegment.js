@@ -3,7 +3,7 @@ import './BarGraph.css';
 class BarSegment extends Component {
   render() {
     return(
-      <div style={{width:this.props.width, height:this.props.height, backgroundColor:this.props.color, cursor: 'pointer', display: 'flex'}} 
+      <div style={{width:this.props.width, height:this.props.height, backgroundColor:this.props.color}} 
       className="segment" onClick={this.props.onClick}>
         <div className="graphText">
           {this.props.name}
@@ -12,6 +12,5 @@ class BarSegment extends Component {
       
     );
   }
-
 }
 export default BarSegment;
