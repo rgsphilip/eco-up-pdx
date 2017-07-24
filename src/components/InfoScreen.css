@@ -1,0 +1,16 @@
+.outerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+.infoContainer {
+  height: 80vh;
+  width: 95%;
+  background-color: #AEECEF;
+  border-radius: 25px;
+}
+
+.content {
+  padding: 1em;
+}
