@@ -17,13 +17,14 @@ class HomeGraph extends Component {
   }
 
 
-  //these all need to be updated
+  
   goToTransit() {
     this.props.history.push('/transit');
   }
   goToFood() {
-    this.props.history.push('/about');
+    this.props.history.push('/food');
   }
+  //these all need to be updated
   goToAppliances() {
     this.props.history.push('/about');
   }

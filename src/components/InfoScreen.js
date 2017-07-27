@@ -19,14 +19,14 @@ class InfoScreen extends Component {
           </div>
 
         </div>
-        <div style={{marginLeft:'10%', marginRight:'10%', borderRadius:'25px'}}>
-        <BarGraph height="5vh" >
-          <BarSegment name="food" width="20%" color="#3066BE" onClick={this.goToFood}/>
-          <BarSegment name="transportation" width="40%" color="#119DA4" onClick={this.goToTransit}/>
-          <BarSegment name="home appliances" width="20%" color="#6D9DC5" onClick={this.goToAppliances}/>
-          <BarSegment name="other" width="20%" color="#80DED9" onClick={this.goToOther}/>
-        </BarGraph>
-        </div>
+        {/* <div style={{marginLeft:'10%', marginRight:'10%', borderRadius:'25px'}}>
+          <BarGraph height="5vh" >
+            <BarSegment name="food" width="20%" color="#3066BE" onClick={this.goToFood}/>
+            <BarSegment name="transportation" width="40%" color="#119DA4" onClick={this.goToTransit}/>
+            <BarSegment name="home" width="20%" color="#6D9DC5" onClick={this.goToAppliances}/>
+            <BarSegment name="other" width="20%" color="#80DED9" onClick={this.goToOther}/>
+          </BarGraph>
+        </div> */}
       </div>
     );
   }

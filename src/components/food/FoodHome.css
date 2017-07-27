@@ -1,0 +1,22 @@
+.circle {
+  border-radius: 50%;
+  height: 20em;
+  width: 20em;
+  background-color: black;
+}
+
+.divider {
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-in-out; 
+  cursor: pointer;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+  
+}
+
+.circle:hover {
+  transform: scale(1.01);
+}
