@@ -24,11 +24,6 @@ class FoodHome extends Component {
     return (
       <InfoScreen>
         <h1>FOOD</h1>
-        {/* <BarGraph height="3vh">
-          <BarSegment width="30%" color="red"/>
-          <BarSegment width="40%" color="green"/>
-          <BarSegment width="30%" color="orange"/>
-        </BarGraph> */}
         <h3>
           All food production and food waste produce greenhouse gases. However, not all foods are created 
           equal. 

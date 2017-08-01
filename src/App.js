@@ -13,7 +13,8 @@ class App extends Component {
         <p className="App-intro">
           EcoUp PDX is a resource to help Portlanders learn how to reduce our environmental footprint.
           <br/>
-          Click on the segments below to learn more about where the average American's carbon emissions come from and how to reduce them. 
+          Per capita, Americans emit 20.52 million pounds of CO2 equivalent greenhouse gases per year. 
+          <br/>
         </p>
         <div className="Bar-graph">
           <HomeGraph/>

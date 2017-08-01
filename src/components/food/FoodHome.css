@@ -20,3 +20,10 @@
 .circle:hover {
   transform: scale(1.01);
 }
+
+.nav-back {
+  cursor: pointer;
+  text-align: right;
+  margin: 0.1em;
+  padding: 0.1em;
+}

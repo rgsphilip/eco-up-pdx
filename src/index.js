@@ -7,6 +7,7 @@ import InfoScreen from './components/InfoScreen';
 import TransitHome from './components/transportation/TransitHome';
 import FoodHome from './components/food/FoodHome';
 import FoodDiet from './components/food/FoodDiet';
+import FoodWaste from './components/food/FoodWaste';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route} from 'react-router-dom';
 
@@ -19,6 +20,7 @@ ReactDOM.render((
       <Route path='/transit' component={TransitHome}/>
       <Route path='/food' component={FoodHome}/>
       <Route path='/diet' component={FoodDiet}/>
+      <Route path='/waste' component={FoodWaste}/>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'))

@@ -15,8 +15,6 @@ class HomeGraph extends Component {
     this.goToAppliances = this.goToAppliances.bind(this);
     this.goToOther = this.goToOther.bind(this);
   }
-
-
   
   goToTransit() {
     this.props.history.push('/transit');
