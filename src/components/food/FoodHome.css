@@ -8,13 +8,12 @@
 .divider {
   align-items: center;
   justify-content: center;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
   cursor: pointer;
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 2em;
-  
 }
 
 .circle:hover {
@@ -26,4 +25,9 @@
   text-align: right;
   margin: 0.1em;
   padding: 0.1em;
+}
+
+.diet-form {
+  display: flex;
+  justify-content: space-between;
 }
