@@ -27,7 +27,20 @@
   padding: 0.1em;
 }
 
+.nav-next {
+  cursor: pointer;
+  text-align: right;
+  margin: 1em;
+  padding: 1em;
+}
+
 .diet-form {
   display: flex;
   justify-content: space-between;
+}
+
+.diet-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
