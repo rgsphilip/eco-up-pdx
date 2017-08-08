@@ -1,3 +1,8 @@
+/* Copyright (c) 2017 Rachel Philip
+This work is available under the "MIT license".
+Please see the file COPYING in this distribution
+for license terms. */
+
 .segment {
   color: white;
   max-width: 50%;
@@ -6,7 +11,7 @@
   font-size: 1.5em;
   align-items: center;
   justify-content: center;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
   cursor: pointer;
   display: flex;
   background-size: cover;

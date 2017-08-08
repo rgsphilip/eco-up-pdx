@@ -1,23 +1,27 @@
-import React, { Component } from 'react';
-import Header from '../components/header/Header';
-import BarGraph from './bargraph/BarGraph';
-import BarSegment from './bargraph/BarSegment';
-import './bargraph/BarGraph.css';
-import './InfoScreen.css';
+/* Copyright (c) 2017 Rachel Philip
+This work is available under the "MIT license".
+Please see the file COPYING in this distribution
+for license terms. */
+
+import React, { Component } from "react";
+import Header from "../components/header/Header";
+import BarGraph from "./bargraph/BarGraph";
+import BarSegment from "./bargraph/BarSegment";
+import "./bargraph/BarGraph.css";
+import "./InfoScreen.css";
 class InfoScreen extends Component {
   render() {
     return (
       <div>
         <div className="Header">
-          <Header/>
+          <Header />
         </div>
         <div className="outerContainer">
           <div className="infoContainer">
-            <div className='content'>
+            <div className="content">
               {this.props.children}
             </div>
           </div>
-
         </div>
         {/* <div style={{marginLeft:'10%', marginRight:'10%', borderRadius:'25px'}}>
           <BarGraph height="5vh" >
