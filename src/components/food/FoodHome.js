@@ -36,7 +36,7 @@ class FoodHome extends Component {
         <Grid columns={2} relaxed>
           <Grid.Column>
             <div className="divider">
-              <div className="circle" onClick={this.goToDiet} />
+              <div className="circleMenu" onClick={this.goToDiet} />
             </div>
             <div className="divider">
               <h3 onClick={this.goToDiet}>Diet Choices</h3>
@@ -45,7 +45,7 @@ class FoodHome extends Component {
 
           <Grid.Column>
             <div className="divider">
-              <div className="circle" onClick={this.goToWaste} />
+              <div className="circleMenu" onClick={this.goToWaste} />
             </div>
             <div className="divider">
               <h3 onClick={this.goToWaste}>Food Waste</h3>

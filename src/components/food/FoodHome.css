@@ -3,7 +3,7 @@ This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
 
-.circle {
+.circleMenu {
   border-radius: 50%;
   height: 20em;
   width: 20em;
@@ -48,4 +48,7 @@ for license terms. */
   display: flex;
   justify-content: center;
   margin-bottom: 1em;
+}
+.modal-link {
+  cursor: pointer;
 }

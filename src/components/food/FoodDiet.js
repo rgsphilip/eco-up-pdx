@@ -14,8 +14,7 @@ import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 import { Button } from "semantic-ui-react";
 import Circle from "../Circle";
-
-const test = [1, 1, 1, 1, 1];
+import DietSlider from "./DietSlider";
 
 class FoodDiet extends Component {
   constructor(props) {
@@ -85,36 +84,7 @@ class FoodDiet extends Component {
         <Grid columns={3}>
           <Grid.Column>
             <h4>How would you characterize your diet?</h4>
-            <Slider
-              min={-1}
-              max={5}
-              step={1}
-              value={volume}
-              orientation="horizontal"
-              tooltip={false}
-              onChange={this.handleOnChange}
-            />
-            <div className="diet-type">
-              {this.translateSliderValue(volume)}
-            </div>
-            <Button type="submit" color="violet">
-              Submit
-            </Button>
-
-            <h4>
-              {" "}Your annual carbon footprint is {}.
-            </h4>
-            <p style={{ display: "flex" }}>
-              One <Circle style={{}} /> equals 15 pounds of carbon emissions:
-            </p>
-            <span style={{ display: "flex", flexWrap: "wrap" }}>
-              {test.map(i => {
-                return <Circle />;
-              })}
-            </span>
-            {/*Todo: put in a submit button and diet description here  */}
-
-            {/* <DietForm onSubmit={this.props.onSubmitDiet} /> */}
+            <DietSlider />
           </Grid.Column>
           <Grid.Column>
             {/* hide this text until after the user has selected their answer */}
