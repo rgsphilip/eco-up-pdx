@@ -5,8 +5,6 @@ for license terms. */
 
 import React, { Component } from "react";
 import Header from "../components/header/Header";
-import BarGraph from "./bargraph/BarGraph";
-import BarSegment from "./bargraph/BarSegment";
 import "./bargraph/BarGraph.css";
 import "./InfoScreen.css";
 class InfoScreen extends Component {

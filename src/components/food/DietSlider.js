@@ -10,6 +10,7 @@ import { connect } from "react-redux";
 import { onSubmitDiet } from "../../actions/food";
 import { Button } from "semantic-ui-react";
 import Circle from "../Circle";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class DietSlider extends Component {
   constructor(props) {
@@ -60,15 +61,26 @@ class DietSlider extends Component {
 
         <h4>
           {" "}Your annual carbon footprint is{" "}
-          {Math.round(this.props.currentEmissions * 15)}  pounds of CO2.
+          {Math.round(this.props.currentEmissions * 15)} pounds of CO2.
         </h4>
         <p style={{ display: "flex" }}>
           One <Circle style={{}} /> equals 15 pounds of carbon emissions:
         </p>
+
         <span style={{ display: "flex", flexWrap: "wrap" }}>
-          {_.times(this.props.currentEmissions, i => {
-            return <Circle />;
-          })}
+          <ReactCSSTransitionGroup
+            transitionName="anim"
+            transitionAppear={false}
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
+            transitionEnter={true}
+            transitionLeave={true}
+            style={{ display: "flex", flexWrap: "wrap" }}
+          >
+            {_.times(this.props.currentEmissions, i => {
+              return <Circle key={i} />;
+            })}
+          </ReactCSSTransitionGroup>
         </span>
       </div>
     );

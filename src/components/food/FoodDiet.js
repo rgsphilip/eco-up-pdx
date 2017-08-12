@@ -8,11 +8,6 @@ import InfoScreen from "../InfoScreen";
 import { Grid } from "semantic-ui-react";
 import "./FoodHome.css";
 import { Icon } from "semantic-ui-react";
-
-import Slider from "react-rangeslider";
-import "react-rangeslider/lib/index.css";
-import { Button } from "semantic-ui-react";
-import Circle from "../Circle";
 import DietSlider from "./DietSlider";
 
 class FoodDiet extends Component {

@@ -52,3 +52,21 @@ for license terms. */
 .modal-link {
   cursor: pointer;
 }
+
+.anim-enter {
+  opacity: 0.01;
+}
+
+.anim-enter.anim-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.anim-leave {
+  opacity: 1;
+}
+
+.anim-leave.anim-leave-active {
+  opacity: 0.01;
+  transition: opacity 1s ease-in;
+}

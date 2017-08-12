@@ -4,9 +4,7 @@ Please see the file COPYING in this distribution
 for license terms. */
 import React, { Component } from "react";
 import InfoScreen from "../InfoScreen";
-import BarGraph from "../bargraph/BarGraph";
-import BarSegment from "../bargraph/BarSegment";
-import { Grid, Segment, Divider } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import "./FoodHome.css";
 import { Icon } from "semantic-ui-react";
 
@@ -63,6 +61,7 @@ class FoodWaste extends Component {
               <a
                 href="https://www.epa.gov/recycle/reducing-wasted-food-home"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 extensive list{" "}
               </a>

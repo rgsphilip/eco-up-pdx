@@ -7,8 +7,6 @@ import React, { Component } from "react";
 import InfoScreen from "../InfoScreen";
 import { Grid, Modal, Icon, Button } from "semantic-ui-react";
 import "./FoodHome.css";
-import { connect } from "react-redux";
-import { onSubmitDiet } from "../../actions/food";
 import DietSlider from "./DietSlider";
 
 class VegDiet extends Component {
@@ -73,7 +71,11 @@ class VegDiet extends Component {
                 </p>
                 <ul>
                   <li>
-                    <a href="http://www.isachandra.com/" target="_blank">
+                    <a
+                      href="http://www.isachandra.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Isa Chandra Moskowitz
                     </a>{" "}
                     is one of the best vegan cookbook authors around. Her books
@@ -130,6 +132,7 @@ class VegDiet extends Component {
                     <a
                       href="http://www.powells.com/book/vb6-9780385344746/17-1"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Vegan Before 6
                     </a>{" "}
@@ -158,7 +161,11 @@ class VegDiet extends Component {
               natural food section in your grocery store and you'll likely find
               many great products. Portland also has a rad all-vegan grocery
               store,{" "}
-              <a href="https://www.foodfightgrocery.com/" target="_blank">
+              <a
+                href="https://www.foodfightgrocery.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Food Fight
               </a>, with lots of specialty foods.
             </p>

@@ -5,9 +5,7 @@ for license terms. */
 
 import React, { Component } from "react";
 import InfoScreen from "../InfoScreen";
-import BarGraph from "../bargraph/BarGraph";
-import BarSegment from "../bargraph/BarSegment";
-import { Grid, Segment, Divider } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import "./FoodHome.css";
 
 class FoodHome extends Component {
