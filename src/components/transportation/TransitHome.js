@@ -5,18 +5,15 @@ for license terms. */
 
 import React, { Component } from "react";
 import InfoScreen from "../InfoScreen";
-import BarGraph from "../bargraph/BarGraph";
-import BarSegment from "../bargraph/BarSegment";
+import TransitForm from "./TransitForm";
 
 class TransitHome extends Component {
   render() {
     return (
       <InfoScreen>
-        <BarGraph height="3vh">
-          <BarSegment width="30%" color="red" />
-          <BarSegment width="40%" color="green" />
-          <BarSegment width="30%" color="orange" />
-        </BarGraph>
+        <h1>TRANSPORTATION</h1>
+        <h3>The journey matters as much as the destination</h3>
+        <TransitForm />
       </InfoScreen>
     );
   }

@@ -10,3 +10,8 @@ for license terms. */
   margin: 0.1em;
   background-color: black;
 }
+
+.question-form {
+  display: flex;
+  justify-content: space-between;
+}

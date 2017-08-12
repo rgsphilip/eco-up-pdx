@@ -4,9 +4,11 @@ Please see the file COPYING in this distribution
 for license terms. */
 
 import { ON_SUBMIT_DIET } from "../actions/food";
+import { SLIDER_VALUES } from "../constants/FoodConst";
 
 const initialState = {
-  currentEmissions: 0,
+  diet: 4,
+  currentEmissions: SLIDER_VALUES[4] * 365 / 15,
   pledgedEmissions: 0
 };
 
@@ -15,7 +17,8 @@ export default function food(state = initialState, action) {
     case ON_SUBMIT_DIET:
       return {
         ...state,
-        currentEmissions: action.diet * 365
+        diet: action.diet,
+        currentEmissions: SLIDER_VALUES[action.diet] * 365 / 15
       };
     default:
       return state;

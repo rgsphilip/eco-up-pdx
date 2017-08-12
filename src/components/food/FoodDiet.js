@@ -8,8 +8,7 @@ import InfoScreen from "../InfoScreen";
 import { Grid } from "semantic-ui-react";
 import "./FoodHome.css";
 import { Icon } from "semantic-ui-react";
-import { connect } from "react-redux";
-import { onSubmitDiet } from "../../actions/food";
+
 import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 import { Button } from "semantic-ui-react";
@@ -22,17 +21,7 @@ class FoodDiet extends Component {
     this.goToFood = this.goToFood.bind(this);
     this.goToWaste = this.goToWaste.bind(this);
     this.goToVegDiet = this.goToVegDiet.bind(this);
-    this.translateSliderValue = this.translateSliderValue.bind(this);
-    this.state = {
-      volume: 4
-    };
   }
-
-  handleOnChange = value => {
-    this.setState({
-      volume: Math.max(value, 0)
-    });
-  };
 
   goToFood() {
     this.props.history.push("/food");
@@ -46,22 +35,9 @@ class FoodDiet extends Component {
     this.props.history.push("/eatveg");
   }
 
-  translateSliderValue(value) {
-    const dietArray = [
-      "Vegan",
-      "Vegetarian",
-      "Pescatarian",
-      "Omnivore - Low Meat",
-      "Omnivore - Medium Meat",
-      "Omnivore - High Meat"
-    ];
-    return dietArray[value];
-  }
-
   render() {
     console.log("current", this.props.currentEmissions);
     console.log("pledged", this.props.pledgedEmissions);
-    let { volume } = this.state;
     return (
       <InfoScreen>
         <Grid columns={2}>
@@ -129,18 +105,4 @@ class FoodDiet extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    ...state.food
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    onSubmitDiet: diet => {
-      dispatch(onSubmitDiet(diet));
-    }
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(FoodDiet);
+export default FoodDiet;

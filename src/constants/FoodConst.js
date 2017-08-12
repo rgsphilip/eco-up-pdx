@@ -10,3 +10,12 @@ export const FISH_DAILY = 3.91;
 export const LOW_MEAT_DAILY = 4.67;
 export const MED_MEAT_DAILY = 5.63;
 export const HIGH_MEAT_DAILY = 7.19;
+
+export const SLIDER_VALUES = [
+  VEGAN_DAILY,
+  VEG_DAILY,
+  FISH_DAILY,
+  LOW_MEAT_DAILY,
+  MED_MEAT_DAILY,
+  HIGH_MEAT_DAILY
+];

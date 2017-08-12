@@ -60,7 +60,10 @@ class FoodWaste extends Component {
             <p>
               The good news about this is that reducing a significant amount of
               food waste is in our control. The EPA has an{" "}
-              <a href="https://www.epa.gov/recycle/reducing-wasted-food-home">
+              <a
+                href="https://www.epa.gov/recycle/reducing-wasted-food-home"
+                target="_blank"
+              >
                 extensive list{" "}
               </a>
               of actions you can take to reduce your food waste (and save

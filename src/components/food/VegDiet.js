@@ -2,6 +2,7 @@
 This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
+
 import React, { Component } from "react";
 import InfoScreen from "../InfoScreen";
 import { Grid, Modal, Icon, Button } from "semantic-ui-react";
@@ -13,11 +14,22 @@ import DietSlider from "./DietSlider";
 class VegDiet extends Component {
   constructor(props) {
     super(props);
+    this.goToFood = this.goToFood.bind(this);
+    this.goToDiet = this.goToDiet.bind(this);
     this.state = {
       openVeg: false,
       openNonVeg: false
     };
   }
+
+  goToFood() {
+    this.props.history.push("/food");
+  }
+
+  goToDiet() {
+    this.props.history.push("/diet");
+  }
+
   show = (size, isVeg) => () =>
     isVeg
       ? this.setState({ size, openVeg: true })
@@ -38,14 +50,14 @@ class VegDiet extends Component {
               Back to Food Home
             </h5>
 
-            <h5 className="nav-back" onClick={this.goToWaste}>
+            <h5 className="nav-back" onClick={this.goToDiet}>
               <Icon name="chevron up" />
               Back to Diet Home
             </h5>
           </Grid.Column>
         </Grid>
         <Grid columns={2}>
-          <Grid.Column>
+          <Grid.Column width={9}>
             <h3 className="modal-link" onClick={this.show("fullscreen", true)}>
               If you are ready to give up meat
               <Icon name="chevron right" />
@@ -61,7 +73,7 @@ class VegDiet extends Component {
                 </p>
                 <ul>
                   <li>
-                    <a href="http://www.isachandra.com/">
+                    <a href="http://www.isachandra.com/" target="_blank">
                       Isa Chandra Moskowitz
                     </a>{" "}
                     is one of the best vegan cookbook authors around. Her books
@@ -115,7 +127,10 @@ class VegDiet extends Component {
                   <br />
                   <li>
                     Check out{" "}
-                    <a href="http://www.powells.com/book/vb6-9780385344746/17-1">
+                    <a
+                      href="http://www.powells.com/book/vb6-9780385344746/17-1"
+                      target="_blank"
+                    >
                       Vegan Before 6
                     </a>{" "}
                     by Mark Bittman.
@@ -142,11 +157,13 @@ class VegDiet extends Component {
               well. If you miss meat and want a substitute, head over to the
               natural food section in your grocery store and you'll likely find
               many great products. Portland also has a rad all-vegan grocery
-              store, <a href="https://www.foodfightgrocery.com/">Food Fight</a>,
-              with lots of specialty foods.
+              store,{" "}
+              <a href="https://www.foodfightgrocery.com/" target="_blank">
+                Food Fight
+              </a>, with lots of specialty foods.
             </p>
           </Grid.Column>
-          <Grid.Column width={7}>
+          <Grid.Column width={6}>
             <h4>See how your diet impacts the climate </h4>
             <DietSlider />
           </Grid.Column>
