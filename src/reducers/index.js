@@ -5,9 +5,11 @@ for license terms. */
 
 import { combineReducers } from "redux";
 import food from "./food";
+import transit from "./transit";
 
 const ecoApp = combineReducers({
-  food
+  food,
+  transit
 });
 
 export default ecoApp;

@@ -64,7 +64,8 @@ class DietSlider extends Component {
             {Math.round(this.props.currentEmissions * 15)} pounds of CO2.
           </h4>
           <p style={{ display: "flex" }}>
-            One <Circle style={{}} /> equals 15 pounds of carbon emissions:
+            One {"  "}
+            <Circle style={{}} /> {"  "}equals 15 pounds of carbon emissions:
           </p>
 
           <span>
