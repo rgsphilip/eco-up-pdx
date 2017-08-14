@@ -8,6 +8,7 @@ import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 import { connect } from "react-redux";
 import { onSubmitDiet } from "../../actions/food";
+import { onSubmitFirstDiet } from "../../actions/food";
 import { Button } from "semantic-ui-react";
 import Circle from "../Circle";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
@@ -16,15 +17,9 @@ class DietSlider extends Component {
   constructor(props) {
     super(props);
     this.translateSliderValue = this.translateSliderValue.bind(this);
-    // this.state = {
-    //   volume: 4
-    // };
   }
 
   handleOnChange = value => {
-    // this.setState({
-    //   volume: Math.max(value, 0)
-    // });
     this.props.onSubmitDiet(Math.max(value, 0));
   };
 
@@ -40,7 +35,6 @@ class DietSlider extends Component {
     return dietArray[value];
   }
   render() {
-    // let { volume } = this.state;
     return (
       <div>
         <Slider
@@ -55,33 +49,40 @@ class DietSlider extends Component {
         <div className="diet-type">
           {this.translateSliderValue(this.props.diet)}
         </div>
-        <Button type="submit" color="violet">
+        <Button
+          type="submit"
+          color="violet"
+          onClick={this.props.onSubmitFirstDiet}
+          style={{ marginBottom: "1em" }}
+        >
           Submit
         </Button>
 
-        <h4>
-          {" "}Your annual carbon footprint is{" "}
-          {Math.round(this.props.currentEmissions * 15)} pounds of CO2.
-        </h4>
-        <p style={{ display: "flex" }}>
-          One <Circle style={{}} /> equals 15 pounds of carbon emissions:
-        </p>
+        <div hidden={this.props.hiddenDiet}>
+          <h4>
+            {" "}Your annual carbon footprint is{" "}
+            {Math.round(this.props.currentEmissions * 15)} pounds of CO2.
+          </h4>
+          <p style={{ display: "flex" }}>
+            One <Circle style={{}} /> equals 15 pounds of carbon emissions:
+          </p>
 
-        <span style={{ display: "flex", flexWrap: "wrap" }}>
-          <ReactCSSTransitionGroup
-            transitionName="anim"
-            transitionAppear={false}
-            transitionEnterTimeout={1000}
-            transitionLeaveTimeout={1000}
-            transitionEnter={true}
-            transitionLeave={true}
-            style={{ display: "flex", flexWrap: "wrap" }}
-          >
-            {_.times(this.props.currentEmissions, i => {
-              return <Circle key={i} />;
-            })}
-          </ReactCSSTransitionGroup>
-        </span>
+          <span>
+            <ReactCSSTransitionGroup
+              transitionName="anim"
+              transitionAppear={false}
+              transitionEnterTimeout={1000}
+              transitionLeaveTimeout={1000}
+              transitionEnter={true}
+              transitionLeave={true}
+              style={{ display: "flex", flexWrap: "wrap" }}
+            >
+              {_.times(this.props.currentEmissions, i => {
+                return <Circle key={i} />;
+              })}
+            </ReactCSSTransitionGroup>
+          </span>
+        </div>
       </div>
     );
   }
@@ -97,6 +98,9 @@ const mapDispatchToProps = dispatch => {
   return {
     onSubmitDiet: diet => {
       dispatch(onSubmitDiet(diet));
+    },
+    onSubmitFirstDiet: hiddenDiet => {
+      dispatch(onSubmitFirstDiet(hiddenDiet));
     }
   };
 };

@@ -10,3 +10,11 @@ export function onSubmitDiet(diet) {
     diet
   };
 }
+
+export const ON_SUBMIT_FIRST_DIET = "ON_SUBMIT_FIRST_DIET";
+export function onSubmitFirstDiet(hiddenDiet) {
+  return {
+    type: ON_SUBMIT_FIRST_DIET,
+    hiddenDiet
+  };
+}

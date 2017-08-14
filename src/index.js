@@ -10,6 +10,7 @@ import App from "./App";
 import About from "./components/about/About";
 import InfoScreen from "./components/InfoScreen";
 import TransitHome from "./components/transportation/TransitHome";
+import TransitSolutions from "./components/transportation/TransitSolutions";
 import FoodHome from "./components/food/FoodHome";
 import FoodDiet from "./components/food/FoodDiet";
 import VegDiet from "./components/food/VegDiet";
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route path="/info" component={InfoScreen} />
         <Route path="/transit" component={TransitHome} />
+        <Route path="/transitsolutions" component={TransitSolutions} />
         <Route path="/food" component={FoodHome} />
         <Route path="/diet" component={FoodDiet} />
         <Route path="/eatveg" component={VegDiet} />
