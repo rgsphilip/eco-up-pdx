@@ -12,7 +12,7 @@ You will need `Node.js` and `npm`. You can download them at https://nodejs.org/e
 
 ### Installing
 
-After downloading this project, navigate into the eco-up-pdx directory and run:
+After downloading this project, navigate into the eco-up-pdx directory and install the project dependencies:
 ```
 npm install
 ```
