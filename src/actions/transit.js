@@ -3,11 +3,44 @@
 // Please see the file COPYING in this distribution
 // for license terms.
 
-export const ON_SUBMIT_CAR_TRANSIT = "ON_SUBMIT_CAR_TRANSIT";
-export function onSubmitCarTransit(transit) {
+// export const ON_SUBMIT_CAR_TRANSIT = "ON_SUBMIT_CAR_TRANSIT";
+// export function onSubmitCarTransit(transit) {
+//   return {
+//     type: ON_SUBMIT_CAR_TRANSIT,
+//     transit
+//   };
+// }
+
+export const ON_CHANGE_NUM_REFILLS = "ON_CHANGE_NUM_REFILLS";
+export function onChangeNumRefills(numRefills) {
+  console.log(numRefills);
   return {
-    type: ON_SUBMIT_CAR_TRANSIT,
-    transit
+    type: ON_CHANGE_NUM_REFILLS,
+    numRefills
+  };
+}
+
+export const ON_CHANGE_NUM_DAYS = "ON_CHANGE_NUM_DAYS";
+export function onChangeNumDays(numDays) {
+  return {
+    type: ON_CHANGE_NUM_DAYS,
+    numDays
+  };
+}
+
+export const ON_CHANGE_NUM_GALLONS = "ON_CHANGE_NUM_GALLONS";
+export function onChangeNumGallons(numGallons) {
+  return {
+    type: ON_CHANGE_NUM_GALLONS,
+    numGallons
+  };
+}
+
+export const ON_CHANGE_NUM_MILES = "ON_CHANGE_NUM_MILES";
+export function onChangeNumMiles(numMiles) {
+  return {
+    type: ON_CHANGE_NUM_MILES,
+    numMiles
   };
 }
 
