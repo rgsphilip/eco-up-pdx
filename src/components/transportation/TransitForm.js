@@ -24,6 +24,8 @@ class TransitForm extends Component {
     this.handleNumRefillsChange = this.handleNumRefillsChange.bind(this);
   }
 
+  // These functions take the contents of what was entered into the form
+  // and call the appropriate function from the reducer.
   handleNumRefillsChange(event) {
     const { onChangeNumRefills } = this.props;
     onChangeNumRefills(event.target.value);

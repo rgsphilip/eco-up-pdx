@@ -49,7 +49,7 @@ Your app is ready to be deployed!
 
 ## Authors
 
-* **Rachel Philip** - [rgsphilip](https://github.com/rgsphilip)
+* **Rachel Philip** - [rgsphilip](https://github.com/rgsphilip). You can contact me at rachel at pdx dot edu.
 
 
 ## License

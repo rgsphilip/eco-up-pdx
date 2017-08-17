@@ -38,10 +38,13 @@ class TransitImpact extends Component {
             transitionLeave={true}
             style={{ display: "flex", flexWrap: "wrap" }}
           >
+            {/* Generate up to 279 circles to represent carbon emissions. 
+              Limited to prevent the webpage from blowing up*/}
             {_.times(_.clamp(circleCount, [0], 279), i => {
               return <Circle key={i} />;
             })}
           </ReactCSSTransitionGroup>
+          {/* state how many more circles would be there. */}
           {hideExtraCircles
             ? <p style={{ display: "flex" }}>
                 ... and {Math.round(extraCircles)} more
