@@ -3,6 +3,7 @@
 // Please see the file COPYING in this distribution
 // for license terms.
 
+// Diet homepage
 import React, { Component } from "react";
 import InfoScreen from "../InfoScreen";
 import { Grid } from "semantic-ui-react";
@@ -78,8 +79,6 @@ class FoodDiet extends Component {
           </Grid.Column>
           <Grid.Column>
             <div hidden={this.props.hiddenDiet}>
-              {/* hide this text until after the user has selected their answer */}
-
               <h4>What's the global impact?</h4>
               <p>
                 Drawdown lists switching to a plant-rich diet as #4 in their

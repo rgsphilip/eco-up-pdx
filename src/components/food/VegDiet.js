@@ -28,6 +28,7 @@ class VegDiet extends Component {
     this.props.history.push("/diet");
   }
 
+  //modal operators
   show = (size, isVeg) => () =>
     isVeg
       ? this.setState({ size, openVeg: true })

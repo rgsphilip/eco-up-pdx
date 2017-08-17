@@ -3,6 +3,7 @@ This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
 
+//bargraph segments with paramenters passed in from BarGraph
 import React, { Component } from "react";
 import "./BarGraph.css";
 

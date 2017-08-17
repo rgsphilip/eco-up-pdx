@@ -3,6 +3,7 @@ This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
 
+//Homepage graph
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import BarGraph from "./BarGraph";
@@ -16,8 +17,6 @@ class HomeGraph extends Component {
     super(props);
     this.goToTransit = this.goToTransit.bind(this);
     this.goToFood = this.goToFood.bind(this);
-    this.goToAppliances = this.goToAppliances.bind(this);
-    this.goToOther = this.goToOther.bind(this);
   }
 
   goToTransit() {
@@ -25,13 +24,6 @@ class HomeGraph extends Component {
   }
   goToFood() {
     this.props.history.push("/food");
-  }
-  //these all need to be updated
-  goToAppliances() {
-    this.props.history.push("/about");
-  }
-  goToOther() {
-    this.props.history.push("/about");
   }
 
   render() {

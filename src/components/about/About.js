@@ -3,6 +3,7 @@
 // Please see the file COPYING in this distribution
 // for license terms.
 
+//This page is the 'about' page on the site
 import React, { Component } from "react";
 import Header from "./../../components/header/Header";
 

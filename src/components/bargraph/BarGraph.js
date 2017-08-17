@@ -3,6 +3,7 @@ This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
 
+//parent div of the bargraph, which passes in parameters into each segment
 import React, { Component } from "react";
 
 class BarGraph extends Component {

@@ -2,6 +2,8 @@
 This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
+
+//this component is the slider for measuring diet carbon emissions
 import React, { Component } from "react";
 import _ from "lodash";
 import Slider from "react-rangeslider";
@@ -23,6 +25,7 @@ class DietSlider extends Component {
     this.props.onSubmitDiet(Math.max(value, 0));
   };
 
+  // translates the slider value to a diet value
   translateSliderValue(value) {
     const dietArray = [
       "Vegan",

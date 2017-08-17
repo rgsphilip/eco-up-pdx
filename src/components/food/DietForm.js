@@ -3,6 +3,7 @@ This work is available under the "MIT license".
 Please see the file COPYING in this distribution
 for license terms. */
 
+//Not currently used - form for measuring how much CO2 a person causes based on diet
 import React, { Component } from "react";
 import { Button, Form } from "semantic-ui-react";
 import "./FoodHome.css";
