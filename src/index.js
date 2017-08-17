@@ -15,7 +15,7 @@ import FoodHome from "./components/food/FoodHome";
 import FoodDiet from "./components/food/FoodDiet";
 import VegDiet from "./components/food/VegDiet";
 import FoodWaste from "./components/food/FoodWaste";
-import registerServiceWorker from "./registerServiceWorker";
+import { unregister } from "./registerServiceWorker";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
@@ -41,4 +41,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-registerServiceWorker();
+unregister();
