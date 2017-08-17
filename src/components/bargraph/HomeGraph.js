@@ -8,10 +8,9 @@ import { withRouter } from "react-router-dom";
 import BarGraph from "./BarGraph";
 import BarSegment from "./BarSegment";
 import "./BarGraph.css";
-import foodImage from "./../../img/IMG_5599.JPG";
-import transitImage from "./../../img/IMG_5593.JPG";
-import applianceImage from "./../../img/IMG_5605.JPG";
-import otherImage from "./../../img/IMG_5565.JPG";
+import foodImage from "./../../img/tomato.jpg";
+import transitImage from "./../../img/busstop.jpg";
+
 class HomeGraph extends Component {
   constructor(props) {
     super(props);
@@ -38,44 +37,20 @@ class HomeGraph extends Component {
   render() {
     return (
       <div>
-        <BarGraph height="2vh">
-          <BarSegment width="20%" color="darkblue" onClick={this.goToFood} />
-          <BarSegment width="40%" color="darkred" onClick={this.goToTransit} />
-          <BarSegment
-            width="20%"
-            color="darkgreen"
-            onClick={this.goToAppliances}
-          />
-          <BarSegment width="20%" color="darkorange" onClick={this.goToOther} />
-        </BarGraph>
-
         <BarGraph height="60vh">
           <BarSegment
             name="food"
-            width="20%"
-            color="blue"
+            width="50%"
+            color="red"
             onClick={this.goToFood}
             image={foodImage}
           />
           <BarSegment
             name="transportation"
-            width="40%"
+            width="50%"
+            color="blue"
             onClick={this.goToTransit}
             image={transitImage}
-          />
-          <BarSegment
-            name="home appliances"
-            width="20%"
-            color="green"
-            onClick={this.goToAppliances}
-            image={applianceImage}
-          />
-          <BarSegment
-            name="other"
-            width="20%"
-            color="orange"
-            onClick={this.goToOther}
-            image={otherImage}
           />
         </BarGraph>
       </div>

@@ -8,34 +8,20 @@ import { Button, Form, Dropdown } from "semantic-ui-react";
 import { connect } from "react-redux";
 import {
   onChangeNumRefills,
-  onChangeNumDays,
   onChangeNumGallons,
   onChangeNumMiles,
   onSubmitFirstTransitCar
 } from "../../actions/transit";
 import "../general.css";
 
-const timePeriod = [
-  { text: "day", value: "day" },
-  { text: "week", value: "week" },
-  { text: "month", value: "month" },
-  { text: "year", value: "year" }
-];
-
 const timeInDays = { day: 1, week: 7, month: 30, year: 365 };
 
 class TransitForm extends Component {
   constructor(props) {
     super(props);
-    this.handleTimePeriodChange = this.handleTimePeriodChange.bind(this);
     this.handleNumGallonsChange = this.handleNumGallonsChange.bind(this);
     this.handleNumMilesChange = this.handleNumMilesChange.bind(this);
     this.handleNumRefillsChange = this.handleNumRefillsChange.bind(this);
-  }
-
-  handleTimePeriodChange(event, dropdownProps) {
-    const { onChangeNumDays } = this.props;
-    onChangeNumDays(timeInDays[dropdownProps.value]);
   }
 
   handleNumRefillsChange(event) {
@@ -58,18 +44,8 @@ class TransitForm extends Component {
       <Form onSubmit={this.onSubmit}>
         <h3> Driving</h3>
         <Form.Field>
-          <label>How many times do you refill for gas?</label>
-          <Form.Field inline>
-            <input onBlur={this.handleNumRefillsChange} />{" "}
-            <label> times per </label>
-            {"  "}
-            <Dropdown
-              placeholder="time period"
-              selection
-              options={timePeriod}
-              onChange={this.handleTimePeriodChange}
-            />;
-          </Form.Field>
+          <label>How many times do you refill for gas per month?</label>
+          <Form.Input width={5} onBlur={this.handleNumRefillsChange} />
         </Form.Field>
         <Form.Field>
           <label>How many gallons of gas do you get on average?</label>
@@ -101,9 +77,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onChangeNumDays: numDays => {
-      dispatch(onChangeNumDays(numDays));
-    },
     onChangeNumGallons: numGallons => {
       dispatch(onChangeNumGallons(numGallons));
     },

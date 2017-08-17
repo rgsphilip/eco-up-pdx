@@ -60,6 +60,24 @@ class FoodDiet extends Component {
 
           <Grid.Column>
             <div hidden={this.props.hiddenDiet}>
+              <h4>How does diet affect greenhouse gas emissions?</h4>
+              <p>
+                One of the most effective ways to curb your greenhouse gas
+                emissions is to eat more plants and less animals. Multiple
+                studies link the raising and shipping of livestock to high
+                greenhouse gas emissions, especially cow products. Producing one
+                pound of beef creates 26 pounds of CO2 equivalent gases.
+                According to Drawdown, "if cattle were their own nation, they
+                would be the world's third-largest emitter of greenhouse gases."
+                While cows are especially hard on the environment, the raising
+                and consumption of any livestock is generally less efficent than
+                eating plants, since many pounds of food and water are necessary
+                to create one pound of animal product.
+              </p>
+            </div>
+          </Grid.Column>
+          <Grid.Column>
+            <div hidden={this.props.hiddenDiet}>
               {/* hide this text until after the user has selected their answer */}
 
               <h4>What's the global impact?</h4>
@@ -74,25 +92,6 @@ class FoodDiet extends Component {
                 emissions could be avoided, making healthy, plant-rich diets one
                 of ht emost impactful solutions at a total of 66 gigatons
                 reduced."
-              </p>
-            </div>
-          </Grid.Column>
-
-          <Grid.Column>
-            <div hidden={this.props.hiddenDiet}>
-              <h4>How does diet affect greenhouse gas emissions?</h4>
-              <p>
-                One of the most effective ways to curb your greenhouse gas
-                emissions is to eat more plants and less animals. Multiple
-                studies link the raising and shipping of livestock to high
-                greenhouse gas emissions, especially cow products. Producing one
-                pound of beef creates 26 pounds of CO2 equivalent gases.
-                According to Drawdown, "if cattle were their own nation, they
-                would be the world's third-largest emitter of greenhouse gases."
-                While cows are especially hard on the environment, the raising
-                and consumption of any livestock is generally less efficent than
-                eating plants, since many pounds of food and water are necessary
-                to create one pound of animal product.
               </p>
               <h3
                 className="nav-next"

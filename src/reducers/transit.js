@@ -17,11 +17,11 @@ const initialState = {
   currentEmissions: 0
 };
 
-const calculateEmissions = (numRefills, numDays, numGallons) => {
-  if (!numRefills || !numDays || !numGallons) {
+const calculateEmissions = (numRefills, numGallons) => {
+  if (!numRefills || !numGallons) {
     return 0;
   }
-  return numRefills / numDays * numGallons * 365 * GAL_OF_GAS_CO2;
+  return numRefills / 30 * numGallons * 365 * GAL_OF_GAS_CO2;
 };
 
 export default function transit(state = initialState, action) {
@@ -32,24 +32,12 @@ export default function transit(state = initialState, action) {
         hiddenTransitCar: false
       };
 
-    case ON_CHANGE_NUM_DAYS:
-      return {
-        ...state,
-        numDays: action.numDays,
-        currentEmissions: calculateEmissions(
-          state.numRefills,
-          action.numDays,
-          state.numGallons
-        )
-      };
-
     case ON_CHANGE_NUM_GALLONS:
       return {
         ...state,
         numGallons: action.numGallons,
         currentEmissions: calculateEmissions(
           state.numRefills,
-          state.numDays,
           action.numGallons
         )
       };
@@ -60,7 +48,6 @@ export default function transit(state = initialState, action) {
         numRefills: action.numRefills,
         currentEmissions: calculateEmissions(
           action.numRefills,
-          state.numDays,
           state.numGallons
         )
       };
